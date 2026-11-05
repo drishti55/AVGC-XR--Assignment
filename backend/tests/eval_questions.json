@@ -1,0 +1,360 @@
+{
+  "_about": "Retrieval evaluation set. 'relevant' lists passages that genuinely answer the question (from reading them); a hit means at least one of them is retrieved. Out-of-scope questions must be refused by the relevance gate. round 1 = questions used to choose the thresholds; round 2 = new paraphrases added afterwards, which exposed two tokenizer gaps (English -ed/-ing stemming, Hindi pronoun stopwords) that were then fixed. Neither round is a true held-out test.",
+  "in_scope": [
+    {
+      "q": "What does Garuda Purana explain about karma?",
+      "lang": "en",
+      "sample": true,
+      "relevant": [
+        "GPS-01-046",
+        "GPS-05-055",
+        "GPS-08-101",
+        "GPS-09-044",
+        "GPS-16-093"
+      ],
+      "round": 1
+    },
+    {
+      "q": "What does the text describe about the soul?",
+      "lang": "en",
+      "sample": true,
+      "relevant": [
+        "GPS-09-042",
+        "GPS-16-005",
+        "GPS-09-044",
+        "GPS-01-032"
+      ],
+      "round": 1
+    },
+    {
+      "q": "What is the significance of good deeds?",
+      "lang": "en",
+      "sample": true,
+      "relevant": [
+        "GPS-08-095",
+        "GPS-14-029",
+        "GPS-14-077",
+        "GPS-14-048",
+        "GPS-08-110",
+        "GPS-08-101"
+      ],
+      "round": 1
+    },
+    {
+      "q": "गरुड़ पुराण में कर्म के बारे में क्या बताया गया है?",
+      "lang": "hi",
+      "sample": true,
+      "relevant": [
+        "GPS-01-046",
+        "GPS-05-055",
+        "GPS-08-101",
+        "GPS-09-044",
+        "GPS-16-093"
+      ],
+      "round": 1
+    },
+    {
+      "q": "गरुड़ पुराण के अनुसार मृत्यु के बाद आत्मा की यात्रा का क्या वर्णन है?",
+      "lang": "hi",
+      "sample": true,
+      "relevant": [
+        "GPS-01-032",
+        "GPS-02-043",
+        "GPS-02-082",
+        "GPS-02-015",
+        "GPS-02-066"
+      ],
+      "round": 1
+    },
+    {
+      "q": "What is the Vaitarani river like?",
+      "lang": "en",
+      "relevant": [
+        "GPS-02-015",
+        "GPS-02-066"
+      ],
+      "round": 1
+    },
+    {
+      "q": "How can the departed cross the Vaitarani?",
+      "lang": "en",
+      "relevant": [
+        "GPS-02-066"
+      ],
+      "round": 1
+    },
+    {
+      "q": "Does karma follow a person after death?",
+      "lang": "en",
+      "relevant": [
+        "GPS-08-101",
+        "GPS-01-046",
+        "GPS-05-055"
+      ],
+      "round": 1
+    },
+    {
+      "q": "How does one attain liberation?",
+      "lang": "en",
+      "relevant": [
+        "GPS-16-087",
+        "GPS-16-093"
+      ],
+      "round": 1
+    },
+    {
+      "q": "Why should a person give gifts and charity?",
+      "lang": "en",
+      "relevant": [
+        "GPS-08-110",
+        "GPS-02-066",
+        "GPS-05-055"
+      ],
+      "round": 1
+    },
+    {
+      "q": "What happens to a person at the moment of death?",
+      "lang": "en",
+      "relevant": [
+        "GPS-01-032",
+        "GPS-09-042"
+      ],
+      "round": 1
+    },
+    {
+      "q": "Who reaches the assembly of the King of Justice?",
+      "lang": "en",
+      "relevant": [
+        "GPS-14-029",
+        "GPS-14-048",
+        "GPS-14-077"
+      ],
+      "round": 1
+    },
+    {
+      "q": "आत्मा के बारे में क्या कहा गया है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-09-042",
+        "GPS-16-005",
+        "GPS-09-044"
+      ],
+      "round": 1
+    },
+    {
+      "q": "वैतरणी नदी कैसी है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-02-015",
+        "GPS-02-066"
+      ],
+      "round": 1
+    },
+    {
+      "q": "मोक्ष कैसे प्राप्त होता है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-16-087",
+        "GPS-16-093"
+      ],
+      "round": 1
+    },
+    {
+      "q": "दान का क्या महत्व है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-08-110",
+        "GPS-02-066",
+        "GPS-05-055"
+      ],
+      "round": 1
+    },
+    {
+      "q": "मनुष्य जन्म का क्या महत्व है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-08-095",
+        "GPS-14-077"
+      ],
+      "round": 1
+    },
+    {
+      "q": "garuda puran mein karma ke baare mein kya kaha hai",
+      "lang": "hi-latn",
+      "relevant": [
+        "GPS-01-046",
+        "GPS-05-055",
+        "GPS-08-101",
+        "GPS-09-044",
+        "GPS-16-093"
+      ],
+      "round": 1
+    },
+    {
+      "q": "What happens after we die?",
+      "lang": "en",
+      "relevant": [
+        "GPS-01-032",
+        "GPS-02-043",
+        "GPS-02-082",
+        "GPS-08-101",
+        "GPS-09-044"
+      ],
+      "round": 2
+    },
+    {
+      "q": "Is there life after death?",
+      "lang": "en",
+      "relevant": [
+        "GPS-09-044",
+        "GPS-02-082",
+        "GPS-01-032",
+        "GPS-08-101",
+        "GPS-14-029"
+      ],
+      "round": 2
+    },
+    {
+      "q": "What is the purpose of human life?",
+      "lang": "en",
+      "relevant": [
+        "GPS-08-095",
+        "GPS-14-077"
+      ],
+      "round": 2
+    },
+    {
+      "q": "Why do people suffer?",
+      "lang": "en",
+      "relevant": [
+        "GPS-05-055",
+        "GPS-01-046",
+        "GPS-08-101"
+      ],
+      "round": 2
+    },
+    {
+      "q": "Who is Yama?",
+      "lang": "en",
+      "relevant": [
+        "GPS-14-048",
+        "GPS-14-077",
+        "GPS-02-082",
+        "GPS-01-032",
+        "GPS-02-015"
+      ],
+      "round": 2
+    },
+    {
+      "q": "What does it say about heaven?",
+      "lang": "en",
+      "relevant": [
+        "GPS-14-029",
+        "GPS-14-077",
+        "GPS-08-110",
+        "GPS-14-048"
+      ],
+      "round": 2
+    },
+    {
+      "q": "मरने के बाद क्या होता है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-01-032",
+        "GPS-02-043",
+        "GPS-02-082",
+        "GPS-08-101",
+        "GPS-09-044"
+      ],
+      "round": 2
+    },
+    {
+      "q": "पाप का फल क्या है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-05-055",
+        "GPS-01-046",
+        "GPS-02-066"
+      ],
+      "round": 2
+    },
+    {
+      "q": "अच्छे कर्म करने से क्या मिलता है?",
+      "lang": "hi",
+      "relevant": [
+        "GPS-14-029",
+        "GPS-08-095",
+        "GPS-14-077",
+        "GPS-14-048"
+      ],
+      "round": 2
+    }
+  ],
+  "out_of_scope": [
+    {
+      "q": "Who won the 2011 Cricket World Cup?",
+      "lang": "en",
+      "round": 1
+    },
+    {
+      "q": "What does Garuda Purana say about quantum physics?",
+      "lang": "en",
+      "round": 1
+    },
+    {
+      "q": "How do I bake a chocolate cake?",
+      "lang": "en",
+      "round": 1
+    },
+    {
+      "q": "What is the best programming language for beginners?",
+      "lang": "en",
+      "round": 1
+    },
+    {
+      "q": "भारत की राजधानी क्या है?",
+      "lang": "hi",
+      "round": 1
+    },
+    {
+      "q": "आज मौसम कैसा रहेगा?",
+      "lang": "hi",
+      "round": 1
+    },
+    {
+      "q": "What is the capital of France?",
+      "lang": "en",
+      "round": 2
+    },
+    {
+      "q": "Tell me a joke",
+      "lang": "en",
+      "round": 2
+    },
+    {
+      "q": "How do I lose weight?",
+      "lang": "en",
+      "round": 2
+    },
+    {
+      "q": "What does the Bhagavad Gita say about war?",
+      "lang": "en",
+      "round": 2
+    },
+    {
+      "q": "What is machine learning?",
+      "lang": "en",
+      "round": 2
+    },
+    {
+      "q": "मुझे एक कहानी सुनाओ",
+      "lang": "hi",
+      "round": 2
+    },
+    {
+      "q": "क्रिकेट का नियम क्या है?",
+      "lang": "hi",
+      "round": 2
+    }
+  ]
+}

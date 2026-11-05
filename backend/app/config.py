@@ -26,7 +26,9 @@ class Settings(BaseSettings):
     # Retrieval
     embedding_model: str = "intfloat/multilingual-e5-small"
     top_k: int = 4
-    semantic_threshold: float = 0.80
+    semantic_threshold: float = 0.80          # needs keyword support
+    strong_semantic_threshold: float = 0.85   # enough on its own
+    bm25_threshold: float = 6.0
 
     # App
     database_path: str = "data/garuda.db"
