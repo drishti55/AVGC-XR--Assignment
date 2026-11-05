@@ -18,6 +18,7 @@ It's a retrieval-augmented generation (RAG) prototype:
 | Knowledge base | 18 passages from the *Garuda Purana Sāroddhāra* (Sanskrit + Hindi: Gita Press 1416; English: Wood & Subrahmanyam 1911), proofread against the page scans. See [docs/SOURCES.md](docs/SOURCES.md) |
 | Retrieval quality | Hybrid search puts a relevant passage in the top 3 for 96% of evaluation questions (MRR 0.89), and the "not in knowledge base" check is right on 40/40 questions. See [docs/EVAL_RETRIEVAL.md](docs/EVAL_RETRIEVAL.md) |
 | Tests | 85 backend tests (`uv run pytest`): no network and no API quota needed |
+| Demo video | [docs/demo/demo.mp4](docs/demo/demo.mp4) (3 min 20 s, captioned) |
 | Sample answers | [docs/SAMPLE_RESPONSES.md](docs/SAMPLE_RESPONSES.md) |
 | Scalability | [docs/SCALABILITY.md](docs/SCALABILITY.md) |
 | AI tools used | [AI_USAGE.md](AI_USAGE.md) |

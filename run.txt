@@ -1,0 +1,63 @@
+GARUDA PURANA Q&A — HOW TO RUN
+==============================
+
+You need 3 terminals (Terminal 1 is optional).
+
+
+TERMINAL 1 — Ollama (local fallback model)   [optional]
+--------------------------------------------------------
+ollama serve
+
+(If it says "address already in use", Ollama is already running — just leave it.)
+
+
+TERMINAL 2 — Backend (FastAPI)
+------------------------------
+cd ~/Desktop/Projects/Assignment/backend
+uv run uvicorn app.main:app --port 8000
+
+Wait until you see:  "Application startup complete"
+API docs:            http://localhost:8000/docs
+
+
+TERMINAL 3 — Frontend (React)
+-----------------------------
+cd ~/Desktop/Projects/Assignment/frontend
+npm run dev
+
+Open in browser:     http://localhost:5173
+
+
+STOP EVERYTHING
+---------------
+Press Ctrl + C in each terminal.
+
+
+------------------------------------------------------------
+ONLY IF SOMETHING IS MISSING (first time / fresh clone)
+------------------------------------------------------------
+Backend setup:
+  cd ~/Desktop/Projects/Assignment/backend
+  uv sync
+  cp .env.example .env              # then put GEMINI_API_KEY in .env
+  uv run python scripts/ingest.py   # builds data/garuda.db
+
+Frontend setup:
+  cd ~/Desktop/Projects/Assignment/frontend
+  npm install
+  cp .env.example .env
+
+Fallback model:
+  ollama pull qwen2.5:7b
+
+
+------------------------------------------------------------
+USEFUL EXTRAS (run in backend folder)
+------------------------------------------------------------
+uv run pytest                                  # run all 85 tests
+uv run python scripts/eval_retrieval.py        # retrieval evaluation
+uv run python scripts/generate_samples.py --prefer-primary   # sample answers (backend must be running)
+
+Port already in use?
+  lsof -ti :8000 | xargs kill      # frees backend port
+  lsof -ti :5173 | xargs kill      # frees frontend port

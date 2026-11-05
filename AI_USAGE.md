@@ -27,6 +27,11 @@ How it was used:
 - **Evaluation:** the questions in `backend/tests/eval_questions.json` were written during
   development. The relevance-gate thresholds were set on them (see the caveats in
   [docs/EVAL_RETRIEVAL.md](docs/EVAL_RETRIEVAL.md)).
+- **Demo video:** [docs/demo/demo.mp4](docs/demo/demo.mp4) is a real screen recording of
+  the running app (backend, frontend and live Gemini calls). The assistant drove the browser
+  with Playwright and added on-screen captions instead of narration. Nothing in it is mocked
+  or edited; one answer shows the real fallback notice from a moment when Gemini Flash was
+  overloaded.
 
 ## AI models used by the application
 
@@ -47,7 +52,8 @@ How it was used:
 - **Frontend:** React, Vite, Tailwind CSS, oxlint.
 - **Development only, not in the repository:**
   - PyMuPDF, to render scan pages for proofreading.
-  - Playwright, to drive the UI in a headless browser for testing.
+  - Playwright, to drive the UI in a headless browser for testing and to record the demo video.
+  - ffmpeg (via imageio-ffmpeg), to convert the recording to MP4.
 
 ## Source texts
 

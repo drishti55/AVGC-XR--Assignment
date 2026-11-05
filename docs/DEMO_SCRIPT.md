@@ -1,5 +1,8 @@
 # Demo script (3–5 minutes)
 
+A captioned recording following this script is in [demo/demo.mp4](demo/demo.mp4). Use the
+script below to record a narrated version.
+
 ## Before recording
 
 1. Check Gemini quota in AI Studio, since a rate-limited Flash makes every answer use a fallback.
