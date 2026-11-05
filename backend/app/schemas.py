@@ -85,6 +85,7 @@ class SourcePassage(PassageOut):
 
 
 class RetrievalInfo(BaseModel):
+    query: str = Field(description="Text actually searched (includes the previous question for short follow-ups)")
     mode: str
     passed_gate: bool
     reason: str

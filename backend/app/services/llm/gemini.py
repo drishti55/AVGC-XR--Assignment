@@ -9,9 +9,9 @@ from app.services.llm.base import ANSWER_SCHEMA, LLMError, LLMResult, parse_resu
 
 
 class GeminiProvider:
-    name = "gemini"
-
-    def __init__(self, api_key: str, model: str, timeout_seconds: float, thinking_level: str = "minimal"):
+    def __init__(self, api_key: str, model: str, timeout_seconds: float, thinking_level: str = "minimal",
+                 name: str = "gemini"):
+        self.name = name              # "gemini" or "gemini-lite" — shown in fallback notices
         self.model = model
         self.thinking_level = thinking_level
         self._client = None

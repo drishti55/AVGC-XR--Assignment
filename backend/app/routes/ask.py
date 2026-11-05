@@ -27,7 +27,16 @@ def ask(body: AskRequest, request: Request, conn: sqlite3.Connection = Depends(g
         raise HTTPException(503, "Question answering is not ready (knowledge base or models not loaded).")
 
     conversation_id = body.conversation_id or str(uuid.uuid4())
-    result = service.answer(conn, body.question)
+    history = db.recent_messages(conn, conversation_id, max_turns=3)
+    result = service.answer(conn, body.question, history)
+
+    # Save both turns in one transaction (chat history is part of the assignment's DB use).
+    with conn:
+        db.ensure_conversation(conn, conversation_id)
+        db.add_message(conn, conversation_id, "user", body.question, language=result.language)
+        db.add_message(conn, conversation_id, "assistant", result.answer, language=result.language,
+                       cited_ids=result.cited_ids, model_used=result.model, answerable=result.answerable,
+                       latency_ms=result.latency_ms)
 
     sources = db.list_sources(conn)
     cosine = {r["id"]: r["cosine"] for r in result.retrieval["retrieved"]}

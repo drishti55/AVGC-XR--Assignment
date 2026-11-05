@@ -39,11 +39,15 @@ def build_answer_service(settings: Settings) -> AnswerService | None:
     with db.connection(settings.db_file) as conn:
         retriever = Retriever.from_db(conn, embedder.embed_query, settings.semantic_threshold,
                                       settings.bm25_threshold, settings.top_k, settings.strong_semantic_threshold)
-    llm = LLMRouter([
-        GeminiProvider(settings.gemini_api_key, settings.gemini_model, settings.gemini_timeout_seconds,
-                       settings.gemini_thinking_level),
-        OllamaProvider(settings.ollama_base_url, settings.ollama_model, settings.ollama_timeout_seconds),
-    ])
+    # Fallback chain: Gemini Flash -> Gemini Flash-Lite (often less loaded) -> local Ollama (offline).
+    providers = [GeminiProvider(settings.gemini_api_key, settings.gemini_model, settings.gemini_timeout_seconds,
+                                settings.gemini_thinking_level)]
+    if settings.gemini_fallback_model:
+        providers.append(GeminiProvider(settings.gemini_api_key, settings.gemini_fallback_model,
+                                        settings.gemini_timeout_seconds, settings.gemini_thinking_level,
+                                        name="gemini-lite"))
+    providers.append(OllamaProvider(settings.ollama_base_url, settings.ollama_model, settings.ollama_timeout_seconds))
+    llm = LLMRouter(providers)
     logger.info("Answer service ready: %d passages indexed", len(retriever.ids))
     return AnswerService(retriever, llm)
 

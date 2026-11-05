@@ -6,6 +6,7 @@ its lifetime and tests can use a temporary database.
 import json
 import sqlite3
 from contextlib import contextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterator
 
@@ -129,3 +130,34 @@ def load_embeddings(conn: sqlite3.Connection) -> tuple[list[str], np.ndarray, st
 
 def count_passages(conn: sqlite3.Connection) -> int:
     return conn.execute("SELECT COUNT(*) FROM passages").fetchone()[0]
+
+
+# ---------------------------------------------------------------- conversation history
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def ensure_conversation(conn: sqlite3.Connection, conversation_id: str) -> None:
+    conn.execute("INSERT OR IGNORE INTO conversations (id, created_at) VALUES (?, ?)", (conversation_id, _now()))
+
+
+def add_message(conn: sqlite3.Connection, conversation_id: str, role: str, content: str, *,
+                language: str | None = None, cited_ids: list[str] | None = None, model_used: str | None = None,
+                answerable: bool | None = None, latency_ms: int | None = None) -> None:
+    conn.execute(
+        """INSERT INTO messages (conversation_id, role, content, language, cited_ids, model_used,
+                                 answerable, latency_ms, created_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (conversation_id, role, content, language,
+         json.dumps(cited_ids) if cited_ids is not None else None, model_used,
+         None if answerable is None else int(answerable), latency_ms, _now()),
+    )
+
+
+def recent_messages(conn: sqlite3.Connection, conversation_id: str, max_turns: int = 3) -> list[dict]:
+    """The last `max_turns` question/answer pairs, oldest first."""
+    rows = conn.execute(
+        """SELECT role, content, answerable FROM messages WHERE conversation_id = ?
+           ORDER BY id DESC LIMIT ?""", (conversation_id, max_turns * 2)).fetchall()
+    return [dict(r) for r in reversed(rows)]

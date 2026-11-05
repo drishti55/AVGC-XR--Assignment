@@ -200,3 +200,84 @@ def test_prompt_contents(kb):
     assert "Hindi translation" in build_user_prompt("कर्म?", "hi", passages)
     system = build_system_prompt("hi")
     assert "Hindi" in system and "Never write chapter or verse numbers" in system
+
+
+# ---------------------------------------------------------------- conversation history (M6)
+
+class RecordingRetriever(FakeRetriever):
+    def __init__(self):
+        super().__init__()
+        self.queries = []
+
+    def search(self, query, mode="hybrid", top_k=None):
+        self.queries.append(query)
+        return super().search(query, mode, top_k)
+
+
+CID = "123e4567-e89b-12d3-a456-426614174000"
+
+
+def test_messages_are_stored(settings, conn):
+    client = make_client(settings)
+    client.post("/ask", json={"question": "What is karma?", "conversation_id": CID})
+    rows = conn.execute("SELECT role, content, cited_ids, model_used, answerable FROM messages "
+                        "WHERE conversation_id = ? ORDER BY id", (CID,)).fetchall()
+    assert [r["role"] for r in rows] == ["user", "assistant"]
+    assert rows[0]["content"] == "What is karma?"
+    assert rows[1]["cited_ids"] == '["GPS-05-055"]' and rows[1]["model_used"] == "gemini/test"
+    assert rows[1]["answerable"] == 1
+
+
+def test_history_reaches_the_prompt_on_follow_up(settings):
+    llm = FakeLLM(result=ok_result())
+    client = make_client(settings, providers=[llm])
+    client.post("/ask", json={"question": "What does the text say about karma?", "conversation_id": CID})
+    first_prompt = llm.last_prompt[1]
+    client.post("/ask", json={"question": "Does it follow a person after death?", "conversation_id": CID})
+    assert "CONVERSATION SO FAR" not in first_prompt
+    assert "USER: What does the text say about karma?" in llm.last_prompt[1]
+    assert "ASSISTANT: Karma must be experienced" in llm.last_prompt[1]
+
+
+def test_conversations_are_isolated(settings):
+    llm = FakeLLM(result=ok_result())
+    client = make_client(settings, providers=[llm])
+    client.post("/ask", json={"question": "Secret first question", "conversation_id": CID})
+    client.post("/ask", json={"question": "karma?"})                       # new conversation
+    assert "Secret first question" not in llm.last_prompt[1]
+
+
+def test_short_follow_up_searches_with_previous_question(settings):
+    retriever = RecordingRetriever()
+    client = make_client(settings, retriever=retriever)
+    client.post("/ask", json={"question": "What is the Vaitarani river?", "conversation_id": CID})
+    r = client.post("/ask", json={"question": "Tell me more about it", "conversation_id": CID}).json()
+    assert retriever.queries[-1] == "What is the Vaitarani river? Tell me more about it"
+    assert r["retrieval"]["query"] == retriever.queries[-1]
+
+
+def test_long_follow_up_searches_on_its_own(settings):
+    retriever = RecordingRetriever()
+    client = make_client(settings, retriever=retriever)
+    client.post("/ask", json={"question": "What is the Vaitarani river?", "conversation_id": CID})
+    client.post("/ask", json={"question": "How does karma decide rebirth into a new body?", "conversation_id": CID})
+    assert retriever.queries[-1] == "How does karma decide rebirth into a new body?"
+
+
+def test_recent_messages_keeps_last_three_turns(conn):
+    from app import db
+    db.ensure_conversation(conn, CID)
+    for n in range(5):
+        db.add_message(conn, CID, "user", f"q{n}")
+        db.add_message(conn, CID, "assistant", f"a{n}")
+    history = db.recent_messages(conn, CID, max_turns=3)
+    assert [m["content"] for m in history] == ["q2", "a2", "q3", "a3", "q4", "a4"]
+
+
+def test_three_step_fallback_chain(settings):
+    providers = [FakeLLM("gemini", error="unavailable"), FakeLLM("gemini-lite", error="timeout"),
+                 FakeLLM("ollama", result=ok_result(model="ollama/qwen2.5:7b"))]
+    body = make_client(settings, providers=providers).post("/ask", json={"question": "karma?"}).json()
+    assert body["model"] == "ollama/qwen2.5:7b"
+    assert body["notice"] == "fallback_used:gemini:unavailable"
+    assert [p.calls for p in providers] == [1, 1, 1]

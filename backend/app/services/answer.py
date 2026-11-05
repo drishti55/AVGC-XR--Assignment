@@ -15,7 +15,7 @@ import time
 from dataclasses import dataclass
 
 from app import db
-from app.services.language import detect_language
+from app.services.language import detect_language, tokenize
 from app.services.llm.router import AllProvidersFailed, LLMRouter
 from app.services.prompts import build_system_prompt, build_user_prompt
 from app.services.retrieval import Retriever
@@ -80,6 +80,23 @@ def validate_citations(answer: str, cited: list[str], retrieved: list[str]) -> t
     return cleaned, valid, rejected
 
 
+HISTORY_CHARS = 500   # assistant answers are shortened in the prompt to save tokens
+
+
+def retrieval_query(question: str, history: list[dict] | None) -> str:
+    """Follow-ups like "tell me more about it" have almost no searchable words of their own.
+    For short questions (<= 3 meaningful words) we also search with the previous question."""
+    if history and len(tokenize(question)) <= 3:
+        last_user = next((m["content"] for m in reversed(history) if m["role"] == "user"), None)
+        if last_user:
+            return f"{last_user} {question}"
+    return question
+
+
+def history_for_prompt(history: list[dict] | None) -> list[dict]:
+    return [{"role": m["role"], "content": m["content"][:HISTORY_CHARS]} for m in history or []]
+
+
 class AnswerService:
     def __init__(self, retriever: Retriever, llm: LLMRouter):
         self.retriever = retriever
@@ -88,8 +105,9 @@ class AnswerService:
     def answer(self, conn: sqlite3.Connection, question: str, history: list[dict] | None = None) -> Answer:
         start = time.perf_counter()
         language = detect_language(question)
-        result = self.retriever.search(question)
-        retrieval = {"mode": result.mode, "passed_gate": result.relevant, "reason": result.reason,
+        search_query = retrieval_query(question, history)
+        result = self.retriever.search(search_query)
+        retrieval = {"query": search_query, "mode": result.mode, "passed_gate": result.relevant, "reason": result.reason,
                      "best_cosine": round(result.best_cosine, 3), "best_bm25": round(result.best_bm25, 2),
                      "retrieved": [{"id": p.id, "cosine": round(p.cosine, 3), "bm25": round(p.bm25, 2)}
                                    for p in result.passages]}
@@ -105,7 +123,7 @@ class AnswerService:
 
         passages = db.get_passages_by_ids(conn, result.ids)
         system = build_system_prompt(language)
-        user = build_user_prompt(question, language, passages, history)
+        user = build_user_prompt(question, language, passages, history_for_prompt(history))
 
         # Layer 2: grounded generation, Gemini first, local Ollama as fallback.
         try:

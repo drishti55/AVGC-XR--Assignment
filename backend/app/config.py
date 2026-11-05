@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     # Primary LLM
     gemini_api_key: str = ""
     gemini_model: str = "gemini-3.5-flash"
+    gemini_fallback_model: str = "gemini-3.5-flash-lite"   # tried 2nd; empty = skip
     gemini_timeout_seconds: float = 30
     gemini_thinking_level: str = "minimal"   # minimal|low|medium|high — minimal is ~4x faster
 
