@@ -15,6 +15,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from app import db
 from app.config import Settings, get_settings
 from app.routes import ask, health, passages
+from app.security import BodySizeLimit, RateLimiter, SecurityHeaders, parse_rate
 from app.services.answer import AnswerService
 from app.services.llm.gemini import GeminiProvider
 from app.services.llm.ollama import OllamaProvider
@@ -70,6 +71,7 @@ def create_app(settings: Settings | None = None, answer_service: AnswerService |
     )
     app.state.settings = settings
     app.state.answer_service = answer_service
+    app.state.rate_limiter = RateLimiter(*parse_rate(settings.rate_limit))
 
     # Only the configured frontend origin may call the API from a browser.
     app.add_middleware(
@@ -78,12 +80,14 @@ def create_app(settings: Settings | None = None, answer_service: AnswerService |
         allow_methods=["GET", "POST"],
         allow_headers=["Content-Type"],
     )
+    app.add_middleware(BodySizeLimit, max_bytes=16_384)
+    app.add_middleware(SecurityHeaders)
 
     # --- every error has the same shape: {"error": <code>, "message": <text>} -------------
     @app.exception_handler(StarletteHTTPException)
     async def http_error(_: Request, exc: StarletteHTTPException):
         return JSONResponse({"error": ERROR_CODES.get(exc.status_code, "error"), "message": str(exc.detail)},
-                            status_code=exc.status_code)
+                            status_code=exc.status_code, headers=getattr(exc, "headers", None))
 
     @app.exception_handler(RequestValidationError)
     async def validation_error(_: Request, exc: RequestValidationError):

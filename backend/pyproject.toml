@@ -14,7 +14,6 @@ dependencies = [
     "pydantic-settings>=2.16.2",
     "rank-bm25>=0.2.2",
     "sentence-transformers>=6.2.0",
-    "slowapi>=0.1.10",
     "uvicorn[standard]>=0.54.0",
 ]
 

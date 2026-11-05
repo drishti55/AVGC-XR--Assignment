@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 
 from app import db
 from app.deps import get_conn
+from app.security import rate_limit
 from app.routes.passages import with_editions
 from app.schemas import AskRequest, AskResponse, ErrorOut
 
@@ -20,7 +21,8 @@ ANSWER_LABELS = {
 
 
 @router.post("/ask", response_model=AskResponse, summary="Ask a question (English or Hindi)",
-             responses={422: {"model": ErrorOut}, 503: {"model": ErrorOut}})
+             responses={422: {"model": ErrorOut}, 429: {"model": ErrorOut}, 503: {"model": ErrorOut}},
+             dependencies=[Depends(rate_limit)])
 def ask(body: AskRequest, request: Request, conn: sqlite3.Connection = Depends(get_conn)):
     service = request.app.state.answer_service
     if service is None:
