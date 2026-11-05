@@ -16,7 +16,8 @@ class Settings(BaseSettings):
     # Primary LLM
     gemini_api_key: str = ""
     gemini_model: str = "gemini-3.5-flash"
-    gemini_timeout_seconds: float = 20
+    gemini_timeout_seconds: float = 30
+    gemini_thinking_level: str = "minimal"   # minimal|low|medium|high — minimal is ~4x faster
 
     # Fallback LLM
     ollama_base_url: str = "http://localhost:11434"
