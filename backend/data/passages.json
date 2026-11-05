@@ -1,0 +1,590 @@
+{
+  "sources": [
+    {
+      "id": "wood1911",
+      "title": "The Garuḍa Purāṇa (Sāroddhāra), with English translation",
+      "translator": "Ernest Wood and S. V. Subrahmanyam",
+      "publisher": "Pāṇini Office, Allahabad — Sacred Books of the Hindus, vol. 9",
+      "year": 1911,
+      "languages": "en",
+      "url": "https://sacred-texts.com/hin/gpu/index.htm",
+      "license_note": "Public domain (published 1911). Text from the sacred-texts.com transcription; checked against the archive.org scan of the 1974 SBH reprint."
+    },
+    {
+      "id": "gitapress1416",
+      "title": "गरुडपुराण-सारोद्धार (सानुवाद) — Garuḍa Purāṇa Sāroddhāra, Sanskrit text with Hindi translation",
+      "translator": "Gita Press editorial (Hindi translation)",
+      "publisher": "Gita Press, Gorakhpur — book code 1416",
+      "year": null,
+      "languages": "sa,hi",
+      "url": "https://archive.org/details/1416-garud-puran-saroddhar",
+      "license_note": "© Gita Press. 18 short excerpts quoted with attribution for non-commercial educational use. Text from the archive.org OCR, proofread against the page scans."
+    }
+  ],
+  "passages": [
+    {
+      "id": "GPS-01-032",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 1,
+      "chapter_title": "The Miseries of the Sinful in this World and the Other",
+      "verse_ref_en": "32-33",
+      "verse_ref_sa": "32-33",
+      "sanskrit": "अङ्गुष्ठमात्रः पुरुषो हाहा कुर्वन्‌ कलेवरात्‌। तदैव गृह्यते दूतैर्याम्यैः पश्यन्‌ स्वकं गृहम्‌॥ ३२ ॥\nयातनादेहमावृत्य पाशैर्बद्ध्वा गले बलात्‌। नयतो दीर्घमध्वानं दण्ड्यं राजभटा यथा॥ ३३ ॥",
+      "hindi": "अपने पांचभौतिक शरीरसे हाय-हाय करते हुए निकलता हुआ तथा यमदूतोंके द्वारा पकड़ा हुआ वह अंगुष्ठमात्र प्रमाणका पुरुष अपने घरको देखता हुआ यमदूतोंके द्वारा यातनादेहसे ढक करके गलेमें बलपूर्वक पाशोंसे बाँधकर सुदूर यममार्गपर यातनाके लिये उसी प्रकार ले जाया जाता है, जिस प्रकार राजपुरुष दण्डनीय अपराधीको ले जाते हैं ॥ ३२-३३ ॥",
+      "english": "32. The man of the size of a thumb, crying out 'oh, oh,' is dragged from the body by the servants of Yama, looking the while at his own body.\n33. Having put round him a body of torment, and bound the noose about his neck, they forcibly lead him a long way, like the king's officers a convict.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "5",
+      "page_sa": "16",
+      "keywords": [
+        "soul leaving body",
+        "thumb-sized being",
+        "messengers of Yama",
+        "moment of death",
+        "यमदूत",
+        "अंगुष्ठमात्र",
+        "मृत्यु",
+        "यातनादेह"
+      ],
+      "topics": [
+        "death",
+        "afterlife_journey",
+        "soul"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-01-046",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 1,
+      "chapter_title": "The Miseries of the Sinful in this World and the Other",
+      "verse_ref_en": "46",
+      "verse_ref_sa": "46",
+      "sanskrit": "नाभुक्तं क्षीयते कर्म कल्पकोटिशतैरपि । अभुक्त्वा यातनां जन्तुर्मानुष्यं लभते न हि॥ ४६ ॥",
+      "hindi": "सैकड़ों करोड़ कल्प बीत जानेपर भी बिना भोग किये कर्मफलका नाश नहीं होता और जबतक वह पापी जीव यातनाओंका भोग नहीं कर लेता, तबतक उसे मनुष्य-शरीर भी प्राप्त नहीं होता॥ ४६ ॥",
+      "english": "46. Karma not experienced does not die away even in thousands of millions of ages; the being who has not experienced the torment certainly does not obtain the human form.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "7",
+      "page_sa": "20",
+      "keywords": [
+        "karma must be experienced",
+        "fruit of karma",
+        "human birth",
+        "कर्मफल",
+        "कर्म",
+        "भोग",
+        "मनुष्य-शरीर"
+      ],
+      "topics": [
+        "karma",
+        "rebirth"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-02-015",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 2,
+      "chapter_title": "The Way of Yama",
+      "verse_ref_en": "15-17",
+      "verse_ref_sa": "15-17",
+      "sanskrit": "मार्गमध्ये वहत्युग्रा घोरा वैतरणी नदी । सा दृष्ट्वा दुःखदा किं वा यस्या वार्ता भयावहा॥ १५ ॥\nशतयोजनविस्तीर्णा पूयशोणितवाहिनी । अस्थिवृन्दतटा दुर्गा मांसशोणितकर्दमा॥ १६ ॥\nअगाधा दुस्तरा पापैः केशशैवालदुर्गमा । महाग्राहसमाकीर्णा घोरपक्षिशतैर्वृता ॥ १७ ॥",
+      "hindi": "(यम) मार्गके बीचोबीच अत्यन्त उग्र और घोर वैतरणी नदी बहती है । वह देखनेपर दुःखदायिनी हो तो क्या आश्चर्य ? उसकी वार्ता ही भय पैदा करनेवाली है ॥ १५ ॥ वह सौ योजन चौड़ी है, उसमें पूय (पीब-मवाद) और शोणित (रक्त) बहते रहते हैं । हड्डियोंके समूहसे तट बने हैं अर्थात्‌ उसके तटपर हड्डियोंका ढेर लगा रहता है। मांस और रक्तके कीचड़वाली वह (नदी) दुःखसे पार की जानेवाली है॥ १६ ॥ अथाह गहरी और पापियोंके द्वारा दुःखपूर्वक पार की जानेवाली वह नदी केशरूपी सेवारसे भरी होनेके कारण दुर्गम है। वह विशालकाय ग्राहों (घड़ियालों) -से व्याप्त है और सैकड़ों प्रकारके घोर पक्षियोंसे आवृत है॥ १७ ॥",
+      "english": "15-17. In the midst of the way flows the terribly horrible Vaitaraṇī River, which when seen inspires misery, of which even an account arouses fear.\nExtending a hundred yojanas, a flow of pus and blood, impassible, with heaps of bones on the banks, with mud of flesh and blood,\nUnfordable, impassible for the sinful, obstructed with hairy moss, filled with huge crocodiles. and crowded with hundreds of dreadful birds.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "11, 12",
+      "page_sa": "25-26",
+      "keywords": [
+        "Vaitarani river",
+        "Way of Yama",
+        "pus and blood",
+        "वैतरणी",
+        "यममार्ग",
+        "नदी"
+      ],
+      "topics": [
+        "afterlife_journey",
+        "vaitarani"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-02-043",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 2,
+      "chapter_title": "The Way of Yama",
+      "verse_ref_en": "43",
+      "verse_ref_sa": "43",
+      "sanskrit": "दशसप्तदिनान्येको वायुवेगेन गच्छति। अष्टादशे दिने तार्क्ष्य प्रेतः सौम्यपुरं व्रजेत्‌॥ ४३ ॥",
+      "hindi": "हे तार्क्ष्य! (इस प्रकार) सतरह दिनतक अकेले वायुवेगसे चलते हुए अठारहवें दिन वह प्रेत सौम्यपुरमें जाता है ॥ ४३ ॥",
+      "english": "43. For seventeen days he goes on alone with the speed of the wind. On the eighteenth day, O Tārkṣya, the departed reaches the City of Saumya.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "15",
+      "page_sa": "31",
+      "keywords": [
+        "seventeen days",
+        "eighteenth day",
+        "City of Saumya",
+        "journey of the departed",
+        "प्रेत",
+        "सौम्यपुर",
+        "अठारहवें दिन"
+      ],
+      "topics": [
+        "afterlife_journey"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-02-066",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 2,
+      "chapter_title": "The Way of Yama",
+      "verse_ref_en": "66-68",
+      "verse_ref_sa": "66-68",
+      "sanskrit": "दानं वितरणं प्रोक्तं मुनिभिस्तत्त्वदर्शिभिः । इयं सा तीर्यते यस्मात्‌ तस्माद्वैतरणी स्मृता॥ ६६ ॥\nयदि त्वया प्रदत्ता गौस्तदा नौरुपसर्पति। नाऽन्यथेति वचस्तेषां श्रुत्वा हा दैव भाषते॥ ६७ ॥\nतं दृष्ट्वा क्वथते सा तु तां दृष्ट्वा सोऽतिक्रन्दते। अदत्तदानः पापात्मा तस्यामेव निमज्जति॥ ६८ ॥",
+      "hindi": "तत्त्वदर्शी मुनियोंने दानको ही वितरण (देना या बाँटना) कहा है। यह वैतरणी नदी वितरणके द्वारा ही पार की जा सकती है, इसलिये इसको वैतरणी कहा जाता है॥ ६६ ॥ यदि तुमने वैतरणी गौका दान किया हो तो नौका तुम्हारे पास आयेगी अन्यथा नहीं। उनके ऐसे वचन सुनकर प्रेत 'हा दैव!' ऐसा कहता है॥ ६७ ॥ उस प्रेतको देखकर वह नदी खौलने लगती है और उसे देखकर प्रेत अत्यन्त क्रन्दन (विलाप) करने लगता है। जिसने अपने जीवनमें कभी दान दिया ही नहीं है, ऐसा पापात्मा उसी (वैतरणी)-में डूबता है ॥ ६८ ॥",
+      "english": "66-67. 'It is said by the sages, who see the truth, that Vitarana is a gift, and this is called Vaitaraṇī because it is crossed over by that.\n'If you have made the gift of a cow, then the boat will come to you, otherwise not.' Having heard their words, 'Oh heavens,' he exclaims.\n68. Seeing him it seethes, seeing which he cries loudly. The sinful soul who has made no gifts verily sinks in that.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "18",
+      "page_sa": "35-36",
+      "keywords": [
+        "Vaitarani",
+        "gift of a cow",
+        "boat",
+        "crossing the river",
+        "दान",
+        "गौ",
+        "वैतरणी",
+        "नौका"
+      ],
+      "topics": [
+        "afterlife_journey",
+        "vaitarani",
+        "charity",
+        "good_deeds"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-02-082",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 2,
+      "chapter_title": "The Way of Yama",
+      "verse_ref_en": "82-83",
+      "verse_ref_sa": "82-83",
+      "sanskrit": "ततः संवत्सरस्यान्ते प्रत्यासन्ने यमालये। बहुभीतिपुरे गत्वा हस्तमात्रं समुत्सृजेत्‌॥ ८२ ॥\nअङ्गुष्ठमात्रो वायुश्च कर्मभोगाय खेचर। यातनादेहमासाद्य सह याम्यैः प्रयाति च॥ ८३ ॥",
+      "hindi": "उसके बाद वर्षके अन्तमें यमपुरके निकट पहुँचनेपर वह प्रेत बहुभीतिपुरमें जाकर हाथभर मापके अपने शरीरको छोड़ देता है॥ ८२ ॥ हे पक्षी! पुनः कर्मभोगके लिये अंगुष्ठमात्रके वायुस्वरूप यातनादेहको प्राप्त करके वह यमदूतोंके साथ जाता है॥ ८३ ॥",
+      "english": "82. At the end of the year, coming nearer to the abode of Yama, having reached the city of Bahubhīti, he casts off the body the measure of a hand.\n83. The spirit the size of a thumb, to work out its karma, getting a body of torment, sets out through the air with the servants of Yama.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "19",
+      "page_sa": "38",
+      "keywords": [
+        "end of the year",
+        "Bahubhiti",
+        "thumb-sized spirit",
+        "body of torment",
+        "कर्मभोग",
+        "यातनादेह",
+        "बहुभीतिपुर"
+      ],
+      "topics": [
+        "afterlife_journey",
+        "karma",
+        "soul"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-05-055",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 5,
+      "chapter_title": "The Signs of Sins",
+      "verse_ref_en": "55-57",
+      "verse_ref_sa": "55-57",
+      "sanskrit": "घटीयन्त्रं यथा मर्त्या भ्रमन्ति मम मायया । भूमौ कदाचिन्नरके कर्मपाशसमावृताः॥ ५५ ॥\nअदत्तदानाच्च भवेद्‌ दरिद्रो दरिद्रभावाच्च करोति पापम्‌। पापप्रभावान्नरके प्रयाति पुनर्दरिद्रः पुनरेव पापी॥ ५६ ॥\nअवश्यमेव भोक्तव्यं कृतं कर्म शुभाशुभम्‌ । नाभुक्तं क्षीयते कर्म कल्पकोटिशतैरपि॥ ५७ ॥",
+      "hindi": "मेरी मायासे प्राणी रहट (घटीयन्त्र)-की भाँति ऊपर-नीचेकी योनियोंमें भ्रमण करते रहते हैं। कर्मपाशसे बँधे रहकर कभी वे नरकमें और कभी भूमिपर जन्म लेते हैं ॥ ५५ ॥ दान न देनेसे प्राणी दरिद्र होता है। दरिद्र हो जानेपर फिर पाप करता है। पापके प्रभावसे नरकमें जाता है और नरकसे लौटकर पुनः दरिद्र और पुनः पापी होता है ॥ ५६ ॥ प्राणीके द्वारा किये गये शुभ और अशुभ कर्मोंका फलभोग उसे अवश्य ही भोगना पड़ता है; क्योंकि सैकड़ों कल्पोंके बीत जानेपर भी बिना भोगके कर्मफलका नाश नहीं होता॥ ५७ ॥",
+      "english": "55. As the wheel of time turns, so mortals revolve by my magic. They revolve at one time of earth, at another in hell, held fast by the noose of karma.\n56. He who does not make gifts becomes poverty--stricken and through poverty he commits sin; by the force of sin he goes to hell, and is again born in poverty and again becomes sinful.\n57. Karma which has been made, whether good or evil, must inevitably be suffered. Karma not suffered does not fade away even in tens of millions of ages.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "44, 45",
+      "page_sa": "78-79",
+      "keywords": [
+        "wheel of birth and death",
+        "noose of karma",
+        "not giving leads to poverty",
+        "good and evil karma",
+        "कर्मपाश",
+        "दान",
+        "दरिद्र",
+        "शुभ अशुभ कर्म"
+      ],
+      "topics": [
+        "karma",
+        "rebirth",
+        "charity"
+      ],
+      "notes": "English: sacred-texts transcription reads 'mike'; corrected to 'make' per the printed SBH edition."
+    },
+    {
+      "id": "GPS-08-095",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 8,
+      "chapter_title": "The Gifts for the Dying",
+      "verse_ref_en": "95-96",
+      "verse_ref_sa": "95-96",
+      "sanskrit": "महापुण्यप्रभावेण मानुषं जन्म लभ्यते। यस्तत्प्राप्य चरेद्धर्मं स याति परमां गतिम्‌॥ ९५ ॥\nअविज्ञाय नरो धर्मं दुःखमायाति याति च। मनुष्यजन्मसाफल्यं केवलं धर्मसेवनम्‌॥ ९६ ॥",
+      "hindi": "महान्‌ पुण्यके प्रभावसे मनुष्य-जन्म प्राप्त होता है। उस मनुष्ययोनिको प्राप्तकर जो व्यक्ति धर्माचरण करता है, वह परमगतिको प्राप्त करता है॥ ९५ ॥ धर्मको न जाननेके कारण व्यक्ति (संसारमें) दुःखपूर्वक जन्म लेता है और मरता है। केवल धर्मके सेवनमें ही मनुष्य-जीवनकी सफलता है॥ ९६ ॥",
+      "english": "95-96. By the power of great merit, birth as a human being is obtained. He who, having gained it, follows righteousness, reaches the supreme goal.\nThe man who neglects righteousness, goes and comes in misery. The fruitfulness of birth as a human being depends upon the pursuit of righteousness alone.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "73",
+      "page_sa": "123",
+      "keywords": [
+        "human birth",
+        "great merit",
+        "righteousness",
+        "supreme goal",
+        "मनुष्य-जन्म",
+        "पुण्य",
+        "धर्म",
+        "परमगति"
+      ],
+      "topics": [
+        "good_deeds",
+        "righteousness"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-08-101",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 8,
+      "chapter_title": "The Gifts for the Dying",
+      "verse_ref_en": "101-104",
+      "verse_ref_sa": "101-104",
+      "sanskrit": "मृतं शरीरमुत्सृज्य काष्ठलोष्टसमं क्षितौ । विमुखा बान्धवा यान्ति धर्मस्तमनुगच्छति॥ १०१ ॥\nगृहादर्था निवर्तन्ते श्मशानात्सर्वबान्धवाः। शुभाशुभं कृतं कर्म गच्छन्तमनुगच्छति॥ १०२ ॥\nशरीरं वह्निना दग्धं कृतं कर्म सहस्थितम्‌। पुण्यं वा यदि वा पापं भुङ्क्ते सर्वत्र मानवः॥ १०३ ॥\nन कोऽपि कस्यचिद्बन्धुः संसारे दुःखसागरे । आयाति कर्मसम्बन्धाद्याति कर्मक्षये पुनः ॥ १०४ ॥",
+      "hindi": "मृत शरीरको काठ और ढेलेके समान पृथ्वीपर छोड़कर बन्धु-बान्धव विमुख होकर लौट जाते हैं, केवल धर्म ही उसका अनुगमन करता है ॥ १०१ ॥ धन-सम्पत्ति घरमें ही छूट जाती है, सभी बन्धु-बान्धव श्मशानमें छूट जाते हैं, किंतु प्राणीके द्वारा किया हुआ शुभाशुभ कर्म परलोकमें उसके पीछे-पीछे जाता है ॥ १०२ ॥ शरीर आगसे जल जाता है किंतु किया हुआ कर्म साथमें रहता है। प्राणी जो कुछ पाप अथवा पुण्य करता है, उसका वह सर्वत्र भोग प्राप्त करता है॥ १०३ ॥ इस दुःखपूर्ण संसारसागरमें कोई भी किसीका बन्धु नहीं है। प्राणी अपने कर्मसम्बन्धसे (संसारमें) आता है और फलभोगसे कर्मका क्षय होनेपर पुनः चला जाता है। (मृत्युको प्राप्त हो जाता है।) ॥ १०४ ॥",
+      "english": "101-102. The relatives turn away with averted faces leaving the dead body on the ground, like a lump of wood or earth, but righteousness goes with him.\nThe wealth disappears from the house, and the relatives from the cremation-ground. The good and evil karma he has made goes with him.\n103-104. When his body has been destroyed by fire his karma remains and wherever he is the man experiences it, be it good or bad.\nNobody has a relation in this changing ocean of sorrow. He is born by the attraction of karma, and goes again upon its exhaustion.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "73, 74",
+      "page_sa": "124-125",
+      "keywords": [
+        "relatives turn away",
+        "karma follows",
+        "righteousness goes with him",
+        "no one belongs to anyone",
+        "धर्म",
+        "कर्म",
+        "बन्धु-बान्धव",
+        "श्मशान"
+      ],
+      "topics": [
+        "karma",
+        "death",
+        "righteousness"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-08-110",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 8,
+      "chapter_title": "The Gifts for the Dying",
+      "verse_ref_en": "110-112",
+      "verse_ref_sa": "110-112",
+      "sanskrit": "श्रद्धया धार्यते धर्मो बहुभिर्नार्थराशिभिः । निष्किञ्चना हि मुनयः श्रद्धावन्तो दिवंगताः ॥ ११० ॥\nपत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रियमात्मनः॥ १११ ॥\nतस्मादवश्यं दातव्यं तदा दानं विधानतः। अल्पं वा बहु वेतीमां गणनां नैव कारयेत्‌॥ ११२ ॥",
+      "hindi": "धर्म श्रद्धासे धारण किया जाता है, बहुत-सी धनराशिसे नहीं। अकिंचन मुनिगण भी श्रद्धावान्‌ होकर स्वर्गको प्राप्त हुए हैं॥ ११० ॥ जो मनुष्य पत्र, पुष्प, फल अथवा जल मुझे भक्तिभावसे समर्पित करता है, उस संयतात्माके द्वारा भक्तिपूर्वक दिये गये पदार्थोंको मैं प्राप्त करता हूँ॥ १११ ॥ इसलिये विधिविधानपूर्वक अवश्य ही दान देना चाहिये। थोड़ा हो या अधिक इसकी कोई गणना नहीं करनी चाहिये॥ ११२ ॥",
+      "english": "110-111. Righteousness is supported by faith, not by large piles of wealth. The wise, though in poverty, have faith, and go to heaven. From him who offers to Me, with devotion, a leaf, a flower, a fruit or water--from him, the self-subdued, I accept that, presented with devotion.\n112. Therefore, by all means, a gift should be made, and as prescribed. Whether it be small or great does not count with me.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "74, 75",
+      "page_sa": "126",
+      "keywords": [
+        "faith",
+        "leaf flower fruit water",
+        "devotion",
+        "giving",
+        "श्रद्धा",
+        "भक्ति",
+        "दान",
+        "पत्र पुष्प फल"
+      ],
+      "topics": [
+        "charity",
+        "good_deeds",
+        "devotion"
+      ],
+      "notes": "English: sacred-texts transcription reads 'leave faith'; corrected to 'have faith' per the printed SBH edition."
+    },
+    {
+      "id": "GPS-09-042",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 9,
+      "chapter_title": "The Rites for the Dying",
+      "verse_ref_en": "42-43",
+      "verse_ref_sa": "42-43",
+      "sanskrit": "पृथिव्यां लीयते पृथ्वी आपश्चैव तथा जले । तेजस्तेजसि लीयेत समीरस्तु समीरणे॥ ४२ ॥\nआकाशश्च तथाऽऽकाशे सर्वव्यापी च शङ्करः । नित्यमुक्तो जगत्साक्षी आत्मा देहेष्वजोऽमरः ॥ ४३ ॥",
+      "hindi": "(पंचभूतोंसे निर्मित इस शरीरका) पृथ्वीतत्त्व पृथ्वीमें लीन हो जाता है, जलतत्त्व जलमें, तेजस्तत्त्व तेजमें और वायुतत्त्व वायुमें लीन हो जाता है, इसी प्रकार आकाशतत्त्व भी आकाशमें लीन हो जाता है। सभी प्राणियोंके देहमें स्थित रहनेवाला, सर्वव्यापी, शिवस्वरूप, नित्य मुक्त और जगत्साक्षी आत्मा अजर-अमर है॥ ४२-४३ ॥",
+      "english": "42-43. Earth is dissipated to earth; likewise water to water; fire is dissipated in fire; also air in air.\nAnd, similarly, ether to ether: and the Self that is in the bodies is happy, all-pervading, eternally free, witness of the world, birthless and deathless.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "81",
+      "page_sa": "135",
+      "keywords": [
+        "five elements",
+        "Self is unborn and deathless",
+        "atman",
+        "soul is eternal",
+        "आत्मा",
+        "पंचभूत",
+        "अजर-अमर",
+        "नित्य मुक्त"
+      ],
+      "topics": [
+        "soul",
+        "death"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-09-044",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 9,
+      "chapter_title": "The Rites for the Dying",
+      "verse_ref_en": "44-45",
+      "verse_ref_sa": "44-45",
+      "sanskrit": "सर्वेन्द्रिययुतो जीवः शब्दादिविषयैर्वृतः। कामरागादिभिर्युक्तः कर्मकोशसमन्वितः ॥ ४४ ॥\nपुण्यवासनया युक्तो निर्मिते स्वेन कर्मणा । प्रविशेत्स नवे देहे गृहे दग्धे यथा गृही ॥ ४५ ॥",
+      "hindi": "सभी इन्द्रियोंसे युक्त और शब्द आदि विषयोंसे युक्त (मृत व्यक्तिके देहसे निकला) जीव कर्म-कोशसे समन्वित तथा काम और रागादिके सहित—पुण्यकी वासनासे युक्त होकर अपने कर्मोंके द्वारा निर्मित नवीन शरीरमें उसी प्रकार प्रवेश करता है, जैसे घरके जल जानेपर गृहस्थ दूसरे नवीन घरमें प्रवेश करता है ॥ ४४-४५ ॥",
+      "english": "44-45. The individual, possessing all the senses, surrounded with sense-objects of sound and the rest, clinging to desire and love, environed by the sheath of karma,\nEndowed with good tendencies, enters a new body created by his own karma, as does a householder whose house has been burnt.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "81",
+      "page_sa": "135-136",
+      "keywords": [
+        "new body",
+        "sheath of karma",
+        "rebirth",
+        "house burnt",
+        "जीव",
+        "नवीन शरीर",
+        "कर्म-कोश",
+        "पुण्यकी वासना"
+      ],
+      "topics": [
+        "soul",
+        "rebirth",
+        "karma"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-14-029",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 14,
+      "chapter_title": "The City of the King of Justice",
+      "verse_ref_en": "29-30",
+      "verse_ref_sa": "29-30",
+      "sanskrit": "तामुग्रतपसो यान्ति सुव्रताः सत्यवादिनः । शान्ताः संन्यासिनः सिद्धाः पूताः पूतेन कर्मणा॥ २९ ॥\nसर्वे भास्वरदेहास्तेऽलङ्कृता विरजाऽम्बराः। स्वकृतैः कर्मभिः पुण्यैस्तत्र तिष्ठन्ति भूषिताः॥ ३० ॥",
+      "hindi": "उसमें उग्र (कठोर) तपस्या करनेवाले, सुव्रती, सत्यवादी, शान्त, संन्यासी, सिद्ध एवं पवित्र कर्म करके शुद्ध हुए पुरुष जाते हैं॥ २९ ॥ उन सभीका देह तेजोमय होता है। वे आभूषणोंसे अलंकृत तथा निर्मल वस्त्रोंसे युक्त होते हैं तथा अपने किये हुए पुण्य कर्मोंके कारण वहाँ विभूषित होकर विराजमान रहते हैं ॥ ३० ॥",
+      "english": "29-30. Those who have done great tapas, are of good vows, truth-speaking, tranquil, renouncing, accomplished, and purified by good actions go there.\nAll there have bodies of light, and are adorned with shining garments, and remain there ornamented with their own meritorious actions.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "133",
+      "page_sa": "212",
+      "keywords": [
+        "good actions",
+        "truthful",
+        "ascetics",
+        "bodies of light",
+        "assembly of Yama",
+        "पुण्य कर्म",
+        "सत्यवादी",
+        "तपस्या",
+        "तेजोमय देह"
+      ],
+      "topics": [
+        "good_deeds",
+        "afterlife_journey"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-14-048",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 14,
+      "chapter_title": "The City of the King of Justice",
+      "verse_ref_en": "48-50",
+      "verse_ref_sa": "48-50",
+      "sanskrit": "ईदृशी सा सभा तार्क्ष्य धर्मराज्ञो महात्मनः। न तां पश्यन्ति ये पापा दक्षिणेन पथा गताः ॥ ४८ ॥\nधर्मराजपुरे गन्तुं चतुर्मार्गा भवन्ति च। पापिनां गमने पूर्वं स तु ते परिकीर्तितः॥ ४९ ॥\nपूर्वादिभिस्त्रिभिर्मार्गैर्ये गता धर्ममन्दिरे। ते वै सुकृतिनः पुण्यैस्तस्यां गच्छन्ति ताञ्छृणु ॥ ५० ॥",
+      "hindi": "हे तार्क्ष्य! महात्मा धर्मराजकी वह सभा इस प्रकारकी है। जो पापात्मा पुरुष दक्षिण द्वारसे (वहाँ) जाते हैं, वे उस सभाको नहीं देख पाते। धर्मराजके पुरमें जानेके लिये चार मार्ग हैं। पापियोंके गमनके लिये जो मार्ग है उसके विषयमें मैंने तुमसे पहले ही कह दिया॥ ४८-४९ ॥ पूर्व आदि तीनों मार्गोंसे जो धर्मराजके मन्दिरमें जाते हैं, वे सुकृती (पुण्यात्मा होते) हैं और अपने पुण्यकर्मोंके बलसे वहाँ जाते हैं, उनके विषयमें सुनो॥ ५० ॥",
+      "english": "48-49. Such, O Tārkṣya, is the assembly of the great-souled King of Justice. The sinners, who go by the southern path, do not behold it.\nThere are four ways leading into the city of the King of Justice: The way for the sinful has already been described to you.\n50. Those who go into the mansion of righteousness by the three gateways, eastern and others, are those of good deeds. By their merits they go into it. Hear about them:--",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "135",
+      "page_sa": "215-216",
+      "keywords": [
+        "four ways",
+        "city of the King of Justice",
+        "southern path of sinners",
+        "gates of the righteous",
+        "धर्मराज",
+        "चार मार्ग",
+        "पुण्यात्मा",
+        "सुकृती"
+      ],
+      "topics": [
+        "afterlife_journey",
+        "good_deeds",
+        "yama_judgment"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-14-077",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 14,
+      "chapter_title": "The City of the King of Justice",
+      "verse_ref_en": "77-81",
+      "verse_ref_sa": "77-81",
+      "sanskrit": "नमस्कुर्वन्तु भोः सभ्या ज्ञानिनं परमादरात्‌ । एष मे मण्डलं भित्त्वा ब्रह्मलोकं प्रयास्यति॥ ७७ ॥\nभो भो बुद्धिमतां श्रेष्ठा नरकक्लेशभीरवः। भवद्भिः साधितं पुण्यैर्देवत्वं सुखदायकम्‌॥ ७८ ॥\nमानुषं दुर्लभं प्राप्य नित्यं यस्तु न साधयेत्‌। स याति नरकं घोरं कोऽन्यस्तस्मादचेतनः॥ ७९ ॥\nअस्थिरेण शरीरेण योऽस्थिरैश्च धनादिभिः । संचिनोति स्थिरं धर्मं स एको बुद्धिमान्‌ नरः॥ ८० ॥\nतस्मात्‌ सर्वप्रयत्नेन कर्तव्यो धर्मसंचयः। गच्छध्वं पुण्यवत्स्थानं सर्वभोगसमन्वितम्‌॥ ८१ ॥",
+      "hindi": "(यम [धर्मराज] कहते हैं—) हे सभासदो! इस ज्ञानीको परम आदरपूर्वक नमस्कार कीजिये, यह हमारे मण्डलका भेदन करके ब्रह्मलोकमें जायगा। हे बुद्धिमानोंमें श्रेष्ठ और नरककी यातनासे भयभीत रहनेवाले पुण्यात्माओ! आप लोगोंने अपने पुण्य-कर्मानुष्ठानसे सुख प्रदान करनेवाला देवत्व प्राप्त कर लिया है। दुर्लभ मनुष्ययोनि प्राप्त करके जो नित्य वस्तु—धर्मका साधन नहीं करता, वह घोर नरकमें गिरता है, उससे बढ़कर अचेतन—अज्ञानी और कौन है ? अस्थिर शरीरसे और अस्थिर धन आदिसे कोई एक बुद्धिमान्‌ मनुष्य ही स्थिर धर्मका संचयन करता है। इसलिये सभी प्रकारके प्रयत्नोंको करके धर्मका संचय करना चाहिये। आप लोग सभी भोगोंसे परिपूर्ण पुण्यात्माओंके स्थान स्वर्गमें जायँ- ॥ ७७-८१ ॥",
+      "english": "77-81. \"O’ You Assembled! Salute with deepest reverence the knower. He, departing from my dominion, will go to the world of Brahmā.\n\"O, Best of the Wise, who avoid the pains of hell; you have by your merits attained divinity, the state of happiness.\n\"He who, attaining the human state, difficult to reach, never acts wisely, he goes to a dreadful hell. Who is more foolish than he?\n\"He who, in the impermanent body, amid perishable wealth and other things, stores up unchanging righteousness, he alone is a wise man. \"Therefore should righteousness be accumulated, with every effort.\nGo you to the holy place which abounds in all enjoyments.\"",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "139",
+      "page_sa": "220-221",
+      "keywords": [
+        "Yama honours the wise",
+        "accumulate righteousness",
+        "human birth is rare",
+        "impermanent body",
+        "धर्मसंचय",
+        "धर्मराज",
+        "मनुष्ययोनि",
+        "अस्थिर शरीर"
+      ],
+      "topics": [
+        "good_deeds",
+        "righteousness",
+        "yama_judgment"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-16-005",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 16,
+      "chapter_title": "The Law for Liberation",
+      "verse_ref_en": "5-10",
+      "verse_ref_sa": "5-10",
+      "sanskrit": "शृणु तार्क्ष्य प्रवक्ष्यामि यन्मां त्वं परिपृच्छसि । यस्य श्रवणमात्रेण संसारान्मुच्यते नरः॥ ५ ॥\nअस्ति देवः परब्रह्मस्वरूपी निष्कलः शिवः। सर्वज्ञः सर्वकर्ता च सर्वेशो निर्मलोऽद्वयः॥ ६ ॥\nस्वयंज्योतिरनाद्यन्तो निर्विकारः परात्परः । निर्गुणः सच्चिदानन्दस्तदंशाज्जीवसंज्ञकः॥ ७ ॥\nअनाद्यविद्योपहता यथाग्नौ विस्फुलिङ्गकाः। देहाद्युपाधिसम्भिन्नास्ते कर्मभिरनादिभिः॥ ८ ॥\nसुखदुःखप्रदैः पुण्यपापरूपैर्नियन्त्रिताः । तत्तज्जातियुतं देहमायुर्भोगं च कर्मजम्‌॥ ९ ॥\nप्रतिजन्म प्रपद्यन्ते येषामपि परं पुनः। सुसूक्ष्मलिङ्गशारीरमामोक्षादक्षरं खग॥ १० ॥",
+      "hindi": "श्रीभगवान्‌ने कहा—हे तार्क्ष्य ! तुम इस विषयमें मुझसे जो पूछते हो, मैं बतलाता हूँ सुनो, जिसके सुननेमात्रसे मनुष्य संसारसे मुक्त हो जाता है॥ ५ ॥ वह परब्रह्म परमात्मा निष्कल (कलारहित) परब्रह्मस्वरूप, शिवस्वरूप, सर्वज्ञ, सर्वकर्ता, सर्वेश्वर, निर्मल तथा अद्वय (द्वैतभावरहित) है ॥ ६ ॥ वह (परमात्मा) स्वतःप्रकाश है, अनादि, अनन्त, निर्विकार, परात्पर, निर्गुण और सत्‌-चित्‌-आनन्दस्वरूप है। यह जीव उसीका अंश है॥ ७ ॥ जैसे अग्निसे बहुत-से स्फुलिंग (चिनगारियाँ) निकलते हैं उसी प्रकार अनादिकालीन अविद्यासे युक्त होनेके कारण अनादि कालसे किये जानेवाले कर्मोंके परिणामस्वरूप देहादि उपाधिको धारण करके जीव भगवान्‌से पृथक्‌ हो गये हैं ॥ ८ ॥ वे जीव प्रत्येक जन्ममें पुण्य और पापरूप सुख-दुःख प्रदान करनेवाले कर्मोंसे नियन्त्रित होकर तत्तत्‌ जातिके योगसे देह (शरीर), आयु और कर्मानुरोधी भोग प्राप्त करते हैं। हे खग! इसके पश्चात्‌ भी पुनः वे अत्यन्त सूक्ष्म लिंगशरीर प्राप्त करते हैं और यह क्रम मोक्षपर्यन्त स्थित रहता है॥ ९-१० ॥",
+      "english": "5-7. The Blessed Lord said: Listen, O Tārkṣya, and I will explain to you what you have asked, even by the hearing of which a man is released from the world of change.\nThere is a Shining One, Śiva, who has the nature of Supreme Brāhmaṇ, who is partless, all-knowing, all-doing, Lord of all, stainless and secondless,\nSelf-illumined, beginningless and endless, beyond the Beyond, without attributes, Being and Knowing and Bliss. That which is considered the individual is from a part of Him.\n8-10 These, like sparks of a fire, with beginningless ignorance, separated and encased in bodies by beginningless karma,\nAre fettered by forms of good and evil, giving happiness and misery,--with nationality of body, length of life, and fortune born of karma.\nIn every life obtained. They have also, O Bird, a higher and more subtle body, the liṅga, lasting until liberation.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "154, 155",
+      "page_sa": "244-245",
+      "keywords": [
+        "individual soul is part of the Supreme",
+        "sparks of fire",
+        "beginningless ignorance",
+        "subtle body",
+        "jiva",
+        "जीव",
+        "परब्रह्म",
+        "अविद्या",
+        "लिंगशरीर"
+      ],
+      "topics": [
+        "soul",
+        "karma",
+        "liberation"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-16-087",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 16,
+      "chapter_title": "The Law for Liberation",
+      "verse_ref_en": "87-88",
+      "verse_ref_sa": "87-88",
+      "sanskrit": "न वेदाध्ययनान्मुक्तिर्न शास्त्रपठनादपि । ज्ञानादेव हि कैवल्यं नान्यथा विनतात्मज॥ ८७ ॥\nनाश्रमः कारणं मुक्तेर्दर्शनानि न कारणम्‌ । तथैव सर्वकर्माणि ज्ञानमेव हि कारणम्‌॥ ८८ ॥",
+      "hindi": "हे विनतात्मज! न वेदाध्ययनसे मुक्ति प्राप्त होती है और न शास्त्रोंके अध्ययनसे ही। मोक्षकी प्राप्ति ज्ञानसे ही होती है, किसी दूसरे उपायसे नहीं॥ ८७ ॥ जिस प्रकार मुक्तिके लिये न तो आश्रमधर्मका अनुष्ठान कारण है, न दर्शनोंका अध्ययन कारण है, उसी प्रकार (श्रौत-स्मार्त) कर्म भी कारण नहीं है । मात्र ज्ञान ही मोक्षका उपाय है ॥ ८८ ॥",
+      "english": "87-88. There is no liberation by the study of the Vedas, nor by the reading of the Śāstras. Emancipation is by knowledge alone, not otherwise, O son of Vinatā.\nThe stages of life are not the cause of liberation, nor are the philosophies, nor are actions,---knowledge only is the cause.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "164",
+      "page_sa": "262",
+      "keywords": [
+        "liberation by knowledge alone",
+        "Vedas",
+        "scriptures",
+        "moksha",
+        "ज्ञान",
+        "मोक्ष",
+        "मुक्ति",
+        "कैवल्य"
+      ],
+      "topics": [
+        "liberation"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "GPS-16-093",
+      "khanda": "Preta Khanda (Uttara Khanda) — Garuḍa Purāṇa Sāroddhāra of Naunidhirāma",
+      "chapter": 16,
+      "chapter_title": "The Law for Liberation",
+      "verse_ref_en": "93-94",
+      "verse_ref_sa": "93-94",
+      "sanskrit": "द्वे पदे बन्धमोक्षाय ममेति न ममेति च। ममेति बध्यते जन्तुर्न ममेति प्रमुच्यते॥ ९३ ॥\nतत्कर्म यन्न बन्धाय सा विद्या या विमुक्तिदा । आयासायापरं कर्म विद्याऽन्या शिल्पनैपुणम्‌॥ ९४ ॥",
+      "hindi": "'न मम' (मेरा नहीं है) और 'मम' (मेरा है)—ये दो पद (भावनाएँ) ही बन्धन और मोक्षके कारण हैं । (देह-गेह और पुत्र-कलत्रादिमें) मम-बुद्धि करनेसे प्राणी बन्धनको प्राप्त होता है और 'मेरा नहीं है', इस प्रकारकी भावना करनेसे मुक्त होता है॥ ९३ ॥ कर्म वही है, जो बन्धका हेतु नहीं होता तथा विद्या वही है, जो मोक्ष प्रदान करा दे और इससे अतिरिक्त कर्म केवल श्रममात्रके हेतु हैं, जो शरीरके लिये क्लेशप्रद हैं तथा अन्य प्रकारकी विद्या शिल्पचातुर्यमात्र है ॥ ९४ ॥",
+      "english": "93-94. Two phrases make for bondage and liberation: \"Mine\" and \"Not-mine.\" The being saying \"Mine\" is bound; saying \"Not-mine\" is released.\nThat is the karma that does not bind, that the knowledge that gives release; other karma is worrying, other knowledge is skilful chiselling.",
+      "sanskrit_source_id": "gitapress1416",
+      "hindi_source_id": "gitapress1416",
+      "english_source_id": "wood1911",
+      "page_en": "165",
+      "page_sa": "262-263",
+      "keywords": [
+        "mine and not-mine",
+        "bondage",
+        "liberation",
+        "karma that does not bind",
+        "मम",
+        "बन्धन",
+        "मोक्ष",
+        "विद्या"
+      ],
+      "topics": [
+        "liberation",
+        "karma"
+      ],
+      "notes": ""
+    }
+  ]
+}

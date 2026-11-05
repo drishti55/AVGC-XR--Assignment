@@ -1,0 +1,28 @@
+[project]
+name = "garuda-qa-backend"
+version = "0.1.0"
+description = "Garuda Purana RAG question-answering API"
+authors = [
+    { name = "Drishti", email = "drishtimain@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.162.0",
+    "google-genai>=2.34.0",
+    "httpx>=0.28.1",
+    "numpy>=2.4.6",
+    "pydantic-settings>=2.16.2",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=6.2.0",
+    "slowapi>=0.1.10",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

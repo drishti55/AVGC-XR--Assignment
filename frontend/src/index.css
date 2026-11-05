@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-deva: "Noto Sans Devanagari", "Inter", sans-serif;
+}
