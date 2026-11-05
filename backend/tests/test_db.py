@@ -1,31 +1,8 @@
 """Database layer tests — temporary SQLite file, fake vectors (no model loading)."""
-import json
-
 import numpy as np
-import pytest
 
 from app import db
-from scripts.validate_kb import KB_PATH, validate
-
-
-@pytest.fixture
-def kb():
-    return json.loads(KB_PATH.read_text(encoding="utf-8"))
-
-
-@pytest.fixture
-def conn(tmp_path, kb):
-    c = db.connect(tmp_path / "test.db")
-    db.init_schema(c)
-    for s in kb["sources"]:
-        db.upsert_source(c, s)
-    for i, p in enumerate(kb["passages"]):
-        vec = np.zeros(8, dtype=np.float32)
-        vec[i % 8] = 1.0
-        db.upsert_passage(c, p, vec, "fake-model")
-    c.commit()
-    yield c
-    c.close()
+from scripts.validate_kb import validate
 
 
 def test_real_knowledge_base_is_valid(kb):
