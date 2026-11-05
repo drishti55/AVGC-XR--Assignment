@@ -2,8 +2,8 @@
 // API keys stay on the server.
 const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '')
 
-// Worst case the backend tries Gemini Flash, then Flash-Lite (30 s each), then local Ollama.
-const ASK_TIMEOUT_MS = 120_000
+// Worst case the backend tries Gemini Flash, then Flash-Lite (30 s each), then local Ollama (120 s).
+const ASK_TIMEOUT_MS = 180_000
 
 export class ApiError extends Error {
   constructor(message, { status = 0, code = 'network_error' } = {}) {

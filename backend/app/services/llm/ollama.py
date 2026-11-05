@@ -19,6 +19,7 @@ class OllamaProvider:
             "model": self.model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "stream": False,
+            "keep_alive": "30m",                # keep the model in memory: avoids slow cold starts
             "format": ANSWER_SCHEMA,            # Ollama constrains the output to this JSON schema
             "options": {
                 "temperature": 0.2,

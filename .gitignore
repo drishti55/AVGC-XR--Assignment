@@ -21,3 +21,6 @@ dist/
 .DS_Store
 .vscode/
 .idea/
+
+# Backups written by scripts/generate_samples.py
+docs/*.bak.md

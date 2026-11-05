@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # Fallback LLM
     ollama_base_url: str = "http://localhost:11434"
     ollama_model: str = "qwen2.5:7b"
-    ollama_timeout_seconds: float = 90
+    ollama_timeout_seconds: float = 120
 
     # Retrieval
     embedding_model: str = "intfloat/multilingual-e5-small"
